@@ -1,0 +1,50 @@
+.home-container {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .home-carousel {
+    max-height: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  .home-carousel img {
+    object-fit: cover;
+    height: 600px;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .card {
+    height: 100%;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .btn-primary {
+    background-color: #4a4a4a;
+    border-color: #4a4a4a;
+  }
+  
+  .btn-primary:hover {
+    background-color: #333333;
+    border-color: #333333;
+  }
+  
+  @media (max-width: 768px) {
+    .home-carousel {
+      max-height: 400px;
+    }
+  
+    .home-carousel img {
+      height: 400px;
+    }
+  }

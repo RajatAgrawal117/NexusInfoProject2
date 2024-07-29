@@ -1,0 +1,81 @@
+/* General styles for body and centering the form */
+
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.form-box {
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #343a40;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-box label {
+  margin: 10px 0 5px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  color: #495057;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745; /* Green color for signup button */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.form-box button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Specific styles for login and signup buttons */
+.login-button {
+  background-color: #007bff; /* Blue color for login button */
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
