@@ -11,7 +11,7 @@ function NavigationBar() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
-      setUser({ name: "John Doe" });
+      setUser({ name: "Welcome back!" });
     }
   }, []);
 
@@ -48,8 +48,8 @@ function NavigationBar() {
                   {user.name}
                 </span>
               } id="basic-nav-dropdown" align="end">
-                <NavDropdown.Item as={Link} to="/profile">Profile</NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/orders">My Orders</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/">Profile</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/">My Orders</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item onClick={handleLogout}>
                   <FaSignOutAlt className="me-2" />
